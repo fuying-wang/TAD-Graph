@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tadgraph"
+authors = [
+    {name = "Fuying Wang", email = "fuyingw@connect.hku.hk"}
+
+]
+description = "TAD-Graph: Enhancing Whole Slide Image Analysis via Task-Aware Subgraph Disentanglement"
+version = "0.0.1"
+readme = "README.md"
+requires-python = ">=3.8"
+# TODO: update dependencies later
+dependencies = [
+    "pandas"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]    # list of folders that contain the packages (["."] by default)
+include = ["src"]  # package names should match these glob patterns (["*"] by default)
+exclude = []         # exclude packages matching these glob patterns (empty by default)
+namespaces = false   # to disable scanning PEP 420 namespaces (true by default)

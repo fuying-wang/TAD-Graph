@@ -1,0 +1,9 @@
+num_layers: 1
+initial_dim: 512
+gconv: gat_v2
+pooling_type: attention
+final_r: 0.5
+lambda_unif: 0.5
+lambda_causal: 0.
+lambda_info: 0.5
+lambda_cont: 0.
